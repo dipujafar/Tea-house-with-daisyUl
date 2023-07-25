@@ -26,7 +26,8 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              "gadient-start": "#FF8938",
+              "gadient-end": "#F00",
             },
           },
         },
@@ -166,9 +167,9 @@
       </section>
       <!-- super client section -->
       <section
-        class="my-24 container mx-auto rounded-lg bg-gradient-to-r from-[#FF8938] to-[#F00] py-24 px-16 flex flex-col lg:flex-row gap-12"
+        class="my-24 container mx-auto rounded-lg bg-gradient-to-r from-gadient-start to-gadient-end lg:px-16 py-16 flex flex-col items-center lg:flex-row gap-12"
       >
-        <div class="space-y-5">
+        <div class="space-y-5 lg:pr-32">
           <h1 class="text-5xl font-extrabold text-white">
             Meet Our Super <br />
             Clients
@@ -202,7 +203,7 @@
           </div>
           <!-- Current Review -->
           <div
-            class="absolute z-10 top-40 -left-36 lg:w-[376px] rounded-lg bg-white p-10"
+            class="absolute z-10 top-40 lg:-left-36 lg:w-[376px] rounded-lg bg-white p-10"
           >
             <img
               class="absolute -top-5 -left-5 border-4 border-white rounded-full bg-white"
@@ -239,6 +240,63 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="lg:p-10 bg-base-200 text-base-content lg:px-48">
+      <div class="flex justify-between my-24 pr-20">
+        <img src="images/cup.png" alt="" />
+        <p>
+          <span>Ready to get strated?</span>
+          <button
+            class="btn bg-gradient-to-r from-gadient-start to-gadient-end"
+          >
+            Get Started
+          </button>
+        </p>
+      </div>
+      <div class="footer">
+        <div>
+          <span class="footer-title">Services</span>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </div>
+        <div>
+          <span class="footer-title">Company</span>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </div>
+        <div>
+          <span class="footer-title">Legal</span>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </div>
+        <div>
+          <span class="footer-title">Newsletter</span>
+          <div class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="bg-transparent border-b-2 border-black outline-none py-4"
+              />
+              <button
+                class="btn bg-gradient-to-r from-gadient-start to-gadient-end rounded-full"
+              >
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10 text-center">
+        <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+      </div>
+    </footer>
   </body>
 </html>
